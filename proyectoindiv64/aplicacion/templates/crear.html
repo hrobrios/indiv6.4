@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro de Usuario</title>
+    
+</head>
+<body>
+    <h1>Registro de Usuario</h1>
+    
+    <form method="post">
+        {% csrf_token %}
+
+        {{ form.as_p }} 
+        <input type="submit">
+        
+        <label>nombre</label>
+        <input type="text" name="nombre">
+        <label>clave</label>
+        <input type="text" name="clave">
+        
+    </form>
+</body>
+</html>
